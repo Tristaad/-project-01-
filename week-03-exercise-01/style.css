@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-color: #093474;
+    margin: 1px;
+    padding: 1px;
+}
+
+.card {
+    max-width: 600px;
+    background-color: #0c85e9;
+    margin: 0 auto;
+    padding: 32px;
+    border: 5px dashed #1dbff0;
+}
+
+h1 {
+    color: #6b0606;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1 1 16px;
+}
+
+p {
+    color: #643806;
+    font-size: 16px;
+    margin: 1 1 16px;
+}
