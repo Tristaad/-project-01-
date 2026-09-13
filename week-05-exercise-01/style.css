@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 2;
+    background-color: #fafafa;
+    color: #1F2937;
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.button-section {
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 16px 32px;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .button-section button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+}
+
+.button-01 {
+    background-color: #0066CC;
+    color: #ffffff;
+    border: 2px solid #0066CC;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-01:hover {
+    background-color: #ffffff;
+    color: #0066CC;
+    border-color: #0066CC;
+}
+
+.button-02 {
+    background-color: #0e6027;
+    color: #ffffff;
+    border: 2px solid #0e6027;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Personalized Button Styles Starts Here
+Button Style 03: Border Reveal*/
+
+.button-03 {
+    background-color: #00cddb;
+    color: #00343A;
+    border: 2px solid #ffffff00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-03:hover {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 4px #fafafa, 0 0 0 10px #00a8b4;
+}
+
+/*Button Style 04: Color Fill*/
+
+.button-04 {
+    background-color: #ebebeb;
+    color: #2B1A12;
+    border: 2px solid #000000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-04:hover {
+    transform: scale(1.05);
+    background-color: #c59466;
+}
+
+/*Button Style 05: Sliding Cover*/
+
+.button-05 {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0d28a;
+    color: #3A2208;
+    border: 2px solid #000000;
+    transition: box-shadow 0.3s ease;
+}
+
+.button-05-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4f6fd8;
+    color: #F6F2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.button-05:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button-05:hover .button-05-cover {
+    transform: translateX(-95%);
+}
+
+/*Button Style 06: Gradient Flow*/
+
+.button-06 {
+    background-color: #EE6C45;
+    background: linear-gradient(45deg, #50366F, #EE6C45, #FFCE61);
+    background-size: 200%;
+    background-position: left;
+    color: #FFF4C7;
+    text-shadow: 1px 1px 2px #000000;
+    border: 2px solid #000000;
+    transition: background-position 0.5s ease, transform 0.3s ease;
+}
+
+.button-06:hover {
+    background-position: right;
+    transform: scale(1.03);
+}
+
+/*Bonus Button Style 06: Continuous Gradient Flow
+This is an attempt at making an actual continuous gradient effect
+The amount of extra effort and research it took to make this work was immense, and I regret having the idea, but I stuck to it and finished it*/
+
+.bonus-heading {
+    margin-top: 64px;
+}
+
+@property --sunset-shift {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: false;
+}
+
+.bonus-button-06 {
+    --sunset-shift: 0px;
+    background-color: #EE6C45;
+    background: repeating-linear-gradient(45deg, #50366F calc(var(--sunset-shift) + 0px), #EE6C45 calc(var(--sunset-shift) + 50px), #FFCE61 calc(var(--sunset-shift) + 100px), #EE6C45 calc(var(--sunset-shift) + 150px), #50366F calc(var(--sunset-shift) + 200px));
+    color: #FFF4C7;
+    text-shadow: 1px 1px 2px #000000;
+    border: 2px solid #000000;
+    transition: transform 0.3s ease;
+}
+
+.bonus-button-06:hover {
+    animation: sunset-flow 5s linear infinite;
+    transform: scale(1.05);
+}
+
+@keyframes sunset-flow {
+    from {
+        --sunset-shift: 0px;
+    }
+    to {
+        --sunset-shift: -200px;
+    }
+}
