@@ -29,3 +29,6 @@ What does _course portfolio repository_ mean?
 - The "course portfolio" means the place you list all of your coursework.
 - The "course portfolio repository" contains a <kbd>index.html</kbd> file that serves as your Course Homepage.
 
+**Quick Link:**
+
+[Repository](https://tristaad.github.io/-project-01-/)
