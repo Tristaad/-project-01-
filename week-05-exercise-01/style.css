@@ -208,7 +208,7 @@ The amount of extra effort and research it took to make this work was immense, a
 }
 
 .bonus-button-06:hover {
-    animation: sunset-flow 5s linear infinite;
+    animation: sunset-flow 6s linear infinite;
     transform: scale(1.05);
 }
 
