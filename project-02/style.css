@@ -1,0 +1,498 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1f1f1f;
+  color: #e6e6e6;
+}
+
+
+/* Header and Navigation */
+
+.page-header {
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.page-title {
+  text-align: center;
+  padding: 24px 16px 12px;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.main-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333333;
+  padding: 8px 32px 12px;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+}
+
+.main-navigation li {
+  margin: 0;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 7px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-navigation a:hover {
+  background-color: #dddddd;
+  color: #3A49A7;
+}
+
+
+/* Main Content */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+
+/* Shared Intro Styles */
+
+.home-intro,
+.contacts-intro,
+.projects-intro,
+.project-page-intro {
+  text-align: center;
+}
+
+.contacts-intro,
+.projects-intro,
+.project-page-intro {
+  margin-bottom: 48px;
+}
+
+.home-intro {
+  margin-bottom: 64px;
+}
+
+.home-intro h2,
+.contacts-intro h2,
+.projects-intro h2,
+.project-page-intro h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #6474c7;
+}
+
+.home-intro h2 {
+  margin-bottom: 16px;
+}
+
+.home-intro p,
+.contacts-intro p,
+.projects-intro p,
+.project-page-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.home-intro p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contacts-intro p {
+  margin: 0;
+}
+
+.projects-intro p,
+.project-page-intro p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* Shared Card Styles */
+
+.home-option,
+.contact-option,
+.project-category,
+.coming-soon,
+.project-item {
+  background-color: #2b2b2b;
+  border-radius: 12px;
+}
+
+.home-option,
+.contact-option,
+.project-category,
+.project-item {
+  border-top: 5px solid #3A49A7;
+}
+
+.home-option,
+.contact-option,
+.project-category,
+.coming-soon {
+  text-align: center;
+}
+
+.home-option h2,
+.contact-option h2,
+.project-category h2,
+.coming-soon h2,
+.project-item h2 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #6474c7;
+}
+
+
+/* Home */
+
+.home-options {
+  display: flex;
+  gap: 32px;
+}
+
+.home-option {
+  flex: 1;
+  padding: 32px;
+}
+
+.home-option h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.home-option p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.home-option a,
+.about-contact a,
+.project-category a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.home-option a {
+  padding: 8px 16px;
+  background-color: #111111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-option a:hover {
+  background-color: #dddddd;
+  color: #3A49A7;
+}
+
+
+/* About */
+
+.about-intro,
+.about-background,
+.about-interests,
+.about-contact {
+  background-color: #2b2b2b;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+  border-left: 5px solid #3A49A7;
+}
+
+.about-intro h2,
+.about-background h2,
+.about-interests h2,
+.about-contact h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #6474c7;
+}
+
+.about-intro p,
+.about-background p,
+.about-interests p,
+.about-contact p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.about-contact a {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #3A49A7;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.about-contact a:hover {
+  background-color: #dddddd;
+  color: #3A49A7;
+  transform: translateY(-3px);
+}
+
+
+/* Contacts */
+
+.contact-list,
+.project-categories,
+.category-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-list {
+  gap: 24px;
+}
+
+.contact-option {
+  flex: 1 1 280px;
+  padding: 28px;
+}
+
+.contact-option h2 {
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.contact-option p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contact-option a {
+  color: #8b9ae0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-option a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+/* Projects Hub */
+
+.project-categories {
+  justify-content: center;
+  gap: 28px;
+}
+
+.project-category {
+  flex: 1 1 400px;
+  max-width: 460px;
+  padding: 32px;
+}
+
+.project-category h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.project-category p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.project-category a {
+  padding: 10px 18px;
+}
+
+
+/* 3D Button */
+
+.category-3d a {
+  background-color: #3A49A7;
+  box-shadow: 0 6px 0 #222a63;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-3d a:hover {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 #222a63;
+}
+
+
+/* Website Button */
+
+.category-websites a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #111111;
+  font-family: "Courier New", monospace;
+  border: 1px solid #6474c7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-websites a::before {
+  content: "> ";
+  color: #6474c7;
+}
+
+.category-websites a::after {
+  content: "_";
+  margin-left: 4px;
+  animation: typing-cursor 0.8s step-end infinite;
+}
+
+.category-websites a:hover {
+  background-color: #dddddd;
+  color: #1f1f1f;
+}
+
+@keyframes typing-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Art Button */
+
+.category-art a {
+  background: linear-gradient(
+    to right,
+    #3A49A7,
+    #7E6AA7,
+    #D9787D,
+    #D8BD55,
+    #3A49A7
+  );
+  background-size: 300% 100%;
+  animation: art-gradient 6s linear infinite;
+  transition: transform 0.3s ease;
+}
+
+.category-art a:hover {
+  transform: scale(1.05);
+}
+
+@keyframes art-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+/* Future Projects */
+
+.more-projects {
+  border-top-color: #555555;
+  opacity: 0.75;
+}
+
+.more-projects h2 {
+  color: #aaaaaa;
+}
+
+.more-projects p {
+  margin-bottom: 0;
+}
+
+
+/* Individual Project Pages */
+
+.category-projects {
+  justify-content: center;
+  gap: 28px;
+}
+
+.coming-soon {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px 32px;
+  border: 2px dashed #555555;
+}
+
+.coming-soon h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.coming-soon p {
+  margin: 0;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+
+/* Future Project Cards */
+
+.project-item {
+  flex: 1 1 280px;
+  max-width: 440px;
+  padding: 28px;
+}
+
+.project-item h2 {
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
+.project-item p {
+  line-height: 1.6;
+}
+
+
+/* Responsive Design for Mobile Devices */
+
+@media (max-width: 700px) {
+  main {
+    padding: 48px 20px;
+  }
+
+  .home-options {
+    flex-direction: column;
+  }
+
+  .about-intro,
+  .about-background,
+  .about-interests,
+  .about-contact {
+    padding: 24px 20px;
+  }
+
+  .contact-option {
+    padding: 24px 20px;
+  }
+
+  .project-page-intro {
+    margin-bottom: 36px;
+  }
+
+  .coming-soon,
+  .project-item {
+    padding: 24px 20px;
+  }
+}
